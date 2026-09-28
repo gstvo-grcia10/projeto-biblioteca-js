@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApexTech | Loja Conceito</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ======================================================== -->
+  <!-- BIBLIOTECA 1: SWIPER.JS (Estilos CSS do Carrossel)      -->
+  <!-- ======================================================== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Estilos customizados da aplicação -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    🔥 Projeto Programação Web I &bull; Demonstração com 3 Bibliotecas JS &bull; Frete Grátis acima de R$ 199
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-badge">JS</span>
+        <span class="logo-text">Apex<strong>Tech</strong></span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#destaques" class="active">Destaques</a>
+        <a href="#catalogo">Catálogo</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="btn-ver-carrinho" class="cart-btn" aria-label="Abrir Carrinho">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span id="cart-counter" class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-tag">Tecnologia & Inovação 2026</div>
+      <h1 class="hero-title">O Futuro dos Gadgets <br><span class="gradient-text">na Ponta dos Dedos</span></h1>
+      <p class="hero-description">
+        Explore nossa linha premium com os periféricos e wearables mais avançados do mercado. Interaja com o carrossel abaixo e confira a integração das bibliotecas JavaScript.
+      </p>
+      <div class="hero-buttons">
+        <a href="#destaques" class="btn btn-primary">Ver Produtos em Destaque</a>
+        <button id="btn-surpresa" class="btn btn-secondary">
+          ✨ Testar Efeito Confete
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== -->
+  <!-- SEÇÃO 1: SWIPER CARROSSEL (Biblioteca: Swiper.js)        -->
+  <!-- ======================================================== -->
+  <section id="destaques" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-library">Biblioteca 1: Swiper.js</div>
+        <h2 class="section-title">Carrossel Interativo de Destaques</h2>
+        <p class="section-subtitle">Arraste para os lados ou use as setas para navegar entre os produtos em destaque.</p>
+      </div>
+
+      <!-- Estrutura padrão do Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="swiper-slides-container">
+          <!-- Slides gerados dinamicamente ou inseridos aqui -->
+        </div>
+
+        <!-- Botões de navegação do Swiper -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Paginação em bolinhas -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 2: CATÁLOGO GERAL -->
+  <section id="catalogo" class="section bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Todos os Produtos</h2>
+        <p class="section-subtitle">Adicione produtos ao carrinho para testar as notificações e o checkout interativo.</p>
+      </div>
+
+      <div class="products-grid" id="products-grid">
+        <!-- Itens inseridos via script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 ApexTech Concept Store &bull; Projeto de Programação Web I</p>
+      <p class="footer-sub">Desenvolvido com HTML5, CSS3, Vanilla JavaScript e 3 Bibliotecas Externas.</p>
+    </div>
+  </footer>
+
+  <!-- ======================================================== -->
+  <!-- IMPORTAÇÃO DAS 3 BIBLIOTECAS JAVASCRIPT VIA CDN          -->
+  <!-- ======================================================== -->
+
+  <!-- 1. Swiper.js (Slider & Carrossel) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- 2. SweetAlert2 (Modais e Notificações Elegantes) -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- 3. canvas-confetti (Efeito de Confetes / Animação Física) -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <!-- Script principal da aplicação -->
+  <script src="script.js"></script>
+</body>
+</html>
